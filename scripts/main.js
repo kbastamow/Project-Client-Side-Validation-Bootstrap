@@ -11,6 +11,8 @@ const msg = document.getElementById("msg")
 
 form.addEventListener("submit", onSubmit)
 
+//Form validation
+
 function onSubmit(e) {
     e.preventDefault();
 
@@ -33,13 +35,35 @@ function onSubmit(e) {
     } else {
         console.log("success");
         msg.textContent = "User created correctly"
+
+        //LOCAL STORAGE HERE!!
+
+        let userArray = JSON.parse(localStorage.getItem("existing")) || []; //without this, new submit will always overwrite the existing data!!!  
+
+        const inputName = userName.value;
+        const inputEmail = email.value;
+        const inputPassword = pw1.value
+
+        const userObject = {inputName, inputEmail, inputPassword};     //This is called "PROPERTY VALUE SHORTHAND" - investigate!!!
+
+        userArray.push(userObject);
+
+        localStorage.setItem("existing", JSON.stringify(userArray));
+
+
+        //REDIRECT TO SECOND PAGE   - BUT HAPPENS TOO SOON - must be delayed!!!
+         window.location.href = "/pages/userview.html";
     }
 
     setTimeout(function () {
         msg.textContent = "";
-   
     }, 3000);
 };
+
+
+
+
+
 
 
 
