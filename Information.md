@@ -163,7 +163,7 @@ Modal plugin is used to add a dialog box/pop-up window to show notifications, et
 
 
 
-13.	Existen inputs para subir archivos en Bootstrap? Pon un ejemplo
+13.	¿Existen inputs para subir archivos en Bootstrap? Pon un ejemplo
 
 File input element. Supports common files such as jpg, pdf. Could be used, for example, to ask user to upload a photo of their ID.
 
