@@ -6,7 +6,8 @@ const pw1 = document.getElementById("pw1");
 const pw2 = document.getElementById("pw2");
 
 const btn = document.getElementById("btn");
-const msg = document.getElementById("msg")
+const msg = document.getElementById("msg");
+const msg2 = document.getElementById("msg2")
 
 
 form.addEventListener("submit", onSubmit)
@@ -20,21 +21,26 @@ function onSubmit(e) {
 
         console.log("Please complete all fields");
         msg.textContent = "Please complete all fields"
+        msg.setAttribute("class","alert alert-warning");
 
     } else if (pw1.value !== pw2.value) {
 
         console.log("Passwords are different")
         msg.textContent = "Passwords are different"
+        msg.setAttribute("class","alert alert-warning");
         pw1.value = "";
         pw2.value = "";
 
 
     } else if (/(\w+?@\w+?\x2E.+)/.test(email.value) !== true) {
         msg.textContent = "Please enter a valid email";
+        msg.setAttribute("class","alert alert-warning");
 
     } else {
         console.log("success");
-        msg.textContent = "User created correctly"
+        msg2.textContent = "User created correctly"
+        msg2.setAttribute("class","alert alert-success");
+    
 
         //LOCAL STORAGE HERE!!
 
@@ -44,7 +50,7 @@ function onSubmit(e) {
         const inputEmail = email.value;
         const inputPassword = pw1.value
 
-        const userObject = {inputName, inputEmail, inputPassword};     //This is called "PROPERTY VALUE SHORTHAND" - investigate!!!
+        const userObject = { inputName, inputEmail, inputPassword };     //This is called "PROPERTY VALUE SHORTHAND" - investigate!!!
 
         userArray.push(userObject);
 
@@ -52,11 +58,20 @@ function onSubmit(e) {
 
 
         //REDIRECT TO SECOND PAGE   - BUT HAPPENS TOO SOON - must be delayed!!!
-         window.location.href = "/pages/userview.html";
+        setTimeout(function () {
+            msg2.textContent = "";
+            msg2.removeAttribute("class")
+        }, 3000);
+
+        setTimeout(function () {
+            window.location.href = "/pages/userview.html";
+        }, 3500);
+        
     }
 
     setTimeout(function () {
         msg.textContent = "";
+        msg.removeAttribute("class")
     }, 3000);
 };
 
