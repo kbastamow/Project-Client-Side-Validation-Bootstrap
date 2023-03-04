@@ -1,21 +1,18 @@
-
 const form = document.getElementById("form");
-const userName = document.getElementById("name");
-const email = document.getElementById("email");
-const pw1 = document.getElementById("pw1");
-const pw2 = document.getElementById("pw2");
-
-const btn = document.getElementById("btn");
-const msg = document.getElementById("msg");
-const msg2 = document.getElementById("msg2")
-
-
 form.addEventListener("submit", onSubmit)
 
 //Form validation
 
 function onSubmit(e) {
     e.preventDefault();
+
+    const userName = document.getElementById("name");
+    const email = document.getElementById("email");
+    const pw1 = document.getElementById("pw1");
+    const pw2 = document.getElementById("pw2");
+
+    const msg = document.getElementById("msg");
+    const msg2 = document.getElementById("msg2")
 
     if (userName.value === "" || email.value === "" || pw1.value === "" || pw2.value === "") {
 

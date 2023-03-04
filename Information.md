@@ -133,13 +133,13 @@ Fluid layout container
 Bootstrap includes predefined button styles, each with its own style and/or semantic purpose:
 
  -Primary  provide more visual weight to a button while representing a primary action for visitors to take on the page. E.g. homepage.
- -Secondary  provide more visual weight to a button while representing a secondary action for visitors to take on the page. E.g. demo
+ -Secondary  
  -Success  to indicate a successful or positive action. For example, at the end of a form
- -Danger  potentially dangerous action. E.g. to ensure visitors review their information before submitting.
- -Warning represents a warning. For example,  the warning button can indicate that some required fields were missed 
+ -Danger  
+ -Warning 
  -Info an informational alert. For example, on an account registration form, an info button might indicate that a user can click to edit their profile.
- -Light  a great option for web pages with dark background colors
- -Dark  works well for web pages with light background colors.
+ -Light 
+ -Dark  
 
 
 
@@ -178,20 +178,10 @@ Automatically updates Bootstrap navigation or list group components based on scr
 Bibliografía
 
 <!-- https://getbootstrap.com -->
-
 <!-- https://immune.institute/blog/razones-usar-bootstrap-web/#:~:text=Esta%20herramienta%20permite%20crear%20una,tanto%2C%20la%20experiencia%20de%20usuario. -->
-
 <!-- https://soyhorizonte.com/blog/ventajas-y-desventajas-de-usar-bootstrap/ -->
-
 <!-- https://www.jose-aguilar.com/blog/como-instalar-y-usar-bootstrap/#:~:text=Una%20forma%20sencilla%20de%20hacerlo,el%20directorio%20que%20tu%20quieras. -->
-
 <!-- https://programarfacil.com/blog/crear-una-web-responsive-con-bootstrap/ -->
-
 <!-- https://www.eniun.com/componentes-utiles-bootstrap/ -->
-
-
 <!--https://blog.hubspot.com/website/bootstrap-button -->
-
-
-
 <!-- https://www.geeksforgeeks.org/how-many-types-of-layouts-are-there-in-bootstrap/ -->
