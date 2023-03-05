@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information about Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar bg-primary">
+
+        <ul class="nav justify-content-end nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link link-light" href="../index.html">Crear usuario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-light" href="/pages/userview.html">Ver usuarios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link link-dark active" href="#">Información de Bootstrap</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="d-grid">
+        <a class="btn btn-outline-dark btn-block" href="./bootstrap.html">Do you prefer in English?</a>
+    </div>
+
+    <div class="d-flex flex-column p-4">
+
+        <button class="btn btn-info text-black p-2 m-2" data-bs-toggle="collapse" data-bs-target="#ans1">1. ¿Por qué
+            usar Bootstrap?
+        </button>
+        <div id="ans1" class="collapse p-2"> Bootstrap es una herramienta muy útil para desarrollar páginas web
+            responsive, lo que permite que los sitios se vean bien y funcionen correctamente en diferentes dispositivos
+            y pantallas. Además, ofrece una amplia variedad de herramientas y componentes para que los desarrolladores
+            puedan crear sitios web atractivos y funcionales con mayor rapidez, facilidad y eficiencia.
+
+        </div>
+        <button class="btn btn-info text-black p-2 m-2" data-bs-toggle="collapse" data-bs-target="#ans2">
+            2. Características de Bootstrap
+        </button>
+        <div id="ans2" class="collapse p-2">
+            <dl>
+                <dt>Interactividad</dt>
+                <dd>Bootstrap proporciona una gran interactividad en la página a través de una serie de componentes que
+                    facilitan la interacción con el usuario, como menús de navegación, barras de progreso y controles de
+                    página.
+                </dd>
+                <dt>Diseño adaptable</dt>
+                <dd>El objetivo principal de Bootstrap es construir sitios web responsive para dispositivos móviles. De
+                    una manera muy simple y organizada, permite diseñar páginas especialmente adaptadas para funcionar
+                    en smartphones, tablets y ordenadores.</dd>
+                <dt>Biblioteca de componentes</dt>
+                <dd>Bootstrap ofrece una gran cantidad de componentes para mejorar la comunicación con el usuario, como
+                    diferentes tipos de alertas, un carrusel deslizante para visualizar imágenes fácilmente y una barra
+                    de navegación que permite múltiples configuraciones.</dd>
+            </dl>
+        </div>
+        <button class="btn btn-info text-black p-2 m-2" data-bs-toggle="collapse" data-bs-target="#ans3">
+            3. Ventajas y desventajas de Bootstrap
+        </button>
+        <div id="ans3" class="collapse p-2">
+            <h5>Ventajas</h5>
+            <ul>
+                <li><b>Fácil de usar y ahorra tiempo</b> - Permite diseñar un sitio web usando diferentes combinaciones
+                    de HTML, CSS y JavaScript. Utiliza tecnologías modernas como HTML5, CSS3 y jQuery, e integra con
+                    bibliotecas de JavaScript. Viene con estilos y plantillas predefinidas. Viene con documentación
+                    completa que hace que sea fácil de usar. </li>
+                <li><b>Responsive</b> - Sus plantillas son fácilmente personalizables y adaptables. Incluye un útil
+                    sistema de cuadrícula para la disposición en columnas que se adapta a diferentes tamaños de pantalla
+                    y dispositivos. </li>
+            </ul>
+
+            <h5>Desventajas</h5>
+            <ul>
+                <li><b>Compatibilidad</b> - Cambiar de versión puede ser difícil si se han realizado modificaciones
+                    profundas. Se recomienda trabajar con Bootstrap desde el inicio del proyecto para evitar problemas
+                    de compatibilidad. No es un marco de trabajo ligero y algunas funcionalidades requieren el uso de
+                    JavaScript y jQuery.
+                </li>
+                <li><b>Restricciones de diseño</b> - Es necesario adaptar el diseño a un sistema de cuadrícula de 12
+                    columnas, lo que puede requerir cambios específicos en los estilos predeterminados de Bootstrap.
+                </li>
+                <li><b>Puede ser pesado</b> - Los archivos generados por Bootstrap y los resultados finales pueden ser
+                    bastante pesados y provocar tiempos de carga más lentos, así como problemas de consumo de batería.
+                </li>
+                <li><b>Diseño poco original</b> - Sin muchas modificaciones, todo lo construido con Bootstrap tendrá un
+                    aspecto muy similar.</li>
+            </ul>
+        </div>
+
+        <button class="btn btn-info text-black p-2 m-2" data-bs-toggle="collapse" data-bs-target="#ans4">
+            4. Cómo usar Bootstrap en un proyecto
+        </button>
+        <div id="ans4" class="collapse p-2">
+            Bootstrap se puede instalar fácilmente visitando <a href="https://getbootstrap.com/">la página oficial</a> y
+            descargando los archivos del paquete. Los archivos de instalación incluyen hojas de estilo CSS, archivos
+            JavaScript y fuentes, y pueden adaptarse a cualquier tipo de proyecto web. Para trabajar con Bootstrap,
+            simplemente agregue las hojas de estilo y el archivo JavaScript en el encabezado o antes de la etiqueta de
+            cierre del archivo HTML.
+
+            Como alternativa, se puede usar utilizando enlaces de Bootstrap CDN que se pueden incluir en el proyecto de
+            forma gratuita.
+        </div>
+
+        <button class="btn btn-info text-black p-2 m-2" data-bs-toggle="collapse" data-bs-target="#ans5">
+            5. Diseño responsive con Bootstrap
+        </button>
+        <div id="ans5" class="collapse p-2">
+            Los sitios construidos con Bootstrap se ajustarán automáticamente al tamaño de la pantalla en la que se
+            vean. Esto es posible gracias a la inclusión de las características de diseño responsive en el
+            <strong>Sistema de rejilla</strong> de Bootstrap.<br>
+            El sistema de rejilla divide la pantalla en <strong>doce columnas virtuales</strong> y permite a los
+            desarrolladores especificar cómo mostrar los elementos en cada tamaño de pantalla. Por ejemplo,
+            en una pantalla pequeña, ciertos elementos pueden ser especificados para apilarse verticalmente para
+            facilitar su lectura y navegación en dispositivos móviles. <br>
+            Para implementar un diseño responsive en Bootstrap, se pueden usar las clases de tamaño de columna,
+            como: <i>col-sm
+            </i>para pantallas pequeñas <i>col-md </i>para pantallas medianas, y <i>col-lg</i> para pantallas grandes.
+            Estas clases se pueden aplicar a cualquier elemento HTML, como un div o una imagen, para definir cómo se
+            mostrará en diferentes tamaños de pantalla..<br>
+
+            Por ejemplo, se puede especificar que un elemento tenga un ancho de 12 columnas (ancho completo de la
+            pantalla) en dispositivos móviles, pero solo 3 o 4 columnas en pantalla.
+        </div>
+
+        <button class="btn btn-info text-black p-2 m-2" data-bs-toggle="collapse" data-bs-target="#ans6">
+            6. Componentes en Bootstrap
+        </button>
+        <div id="ans6" class="collapse p-2">
+            Bootstrap ofrece una gran cantidad de componentes preconstruidos que los desarrolladores web pueden utilizar
+            en sus proyectos. Estos componentes incluyen menús de navegación, carruseles, tablas y muchos
+            otros. En su página oficial, Bootstrap ofrece ejemplos de estos componentes, lo que facilita su
+            implementación. Algunos de los componentes más utilizados son:
+
+            <ul>
+                <li>carousel</li>
+                <li>navbar y navs</li>
+                <li>jumbotron</li>
+                <li>breadcrumbs</li>
+                <li>pagination</li>
+                <li>tooltips</li>
+                <li>forms</li>
+                <li>cards</li>
+            </ul>
+            Por ejemplo, un navbar y los componentes nav permiten crear una barra de navegación responsive con
+            diferentes elementos como enlaces y desplegables. Los elementos de la barra de navegación se crean
+            utilizando listas HTML y se estilizan con clases específicas de Bootstrap. El JavaScript incorporado de
+            Bootstrap se puede utilizar para activar la funcionalidad de desplegable en la barra de navegación.
+        </div>
+
+        <button class="btn btn-info text-black p-2 m-2" data-bs-toggle="collapse" data-bs-target="#ans7">
+            7. Tipos de diseño de Bootstrap
+        </button>
+        <div id="ans7" class="collapse p-2">
+            Hay dos diseños principales para Bootstrap:
+
+            <dl>
+                <dt>Diseño Fijo</dt>
+                <dd>Este utiliza la clase .container de Bootstrap para el diseño. El diseño fijo tiene valores de ancho
+                    específicos en píxeles que cambian con la ayuda de consultas de medios, lo que hace que el sitio sea
+                    receptivo. El diseño fijo cambia de tamaño en intervalos siguiendo los valores de píxeles
+                    especificados.</dd>
+                <dt>Diseño Fluido</dt>
+                <dd>Este utiliza la clase .container-fluid de Bootstrap para el diseño. Este diseño utiliza valores
+                    proporcionales como porcentajes para bloques de contenido, imágenes o cualquier otro elemento. El
+                    diseño fluido cambia de tamaño continuamente a medida que cambias el ancho de tu navegador por
+                    cualquier cantidad, sin dejar espacio vacío adicional en los lados. Por lo tanto, se llama "diseño
+                    fluido".</dd>
+            </dl>
+            <b>Los contenedores</b> son el elemento de diseño más básico en Bootstrap y son necesarios al utilizar
+            nuestro sistema de cuadrícula predeterminado. Bootstrap viene con tres contenedores diferentes.<br>
+            Contenedores de diseño fijo:
+
+            <ul>
+                <li><i>.container</i>, que establece un ancho máximo en cada punto de interrupción receptivo</li>
+                <li><i>.container-{punto de interrupción}</i>, que es ancho: 100% hasta el punto de interrupción
+                    especificado. El punto de interrupción puede ser (sm/md/lg/xl). Ver <a
+                        href="https://getbootstrap.com/docs/4.4/layout/overview/">aquí</a> para más detalles.</li>
+            </ul>
+            Contenedor de diseño fluido:
+            <ul>
+                <li><i>.container-fluid</i>, que tiene un ancho: 100% en todos los puntos de interrupción</li>
+            </ul>
+        </div>
+
+        <button class="btn btn-info text-black p-2 m-2" data-bs-toggle="collapse" data-bs-target="#ans8">
+            8. Diferentes tipos de botones en Bootstrap
+        </button>
+        <div id="ans8" class="collapse p-2">
+            Bootstrap incluye estilos de botón predefinidos, cada uno con su propio estilo y/o propósito semántico:
+            <ul>
+                <li><button class="btn btn-primary">Primario </button>Proporciona un mayor peso visual a un botón
+                    mientras representa una acción primaria que los visitantes deben realizar en la página. Ejemplo:
+                    página de inicio.</li>
+                <li><button class="btn btn-secondary"> Secundario</button> Proporciona un mayor peso visual a un botón
+                    mientras representa una acción secundaria que los visitantes deben realizar en la página. Ejemplo:
+                    demo </li>
+                <li><button class="btn btn-success">Éxito </button>Indica una acción exitosa o positiva. Ejemplo: al
+                    completar un formulario.</li>
+                <li><button class="btn btn-danger"> Peligro</button>Una acción potencialmente peligrosa. Ejemplo: para
+                    asegurarse de que los visitantes revisen su información antes de enviarla.</li>
+                <li><button class="btn btn-warning">Advertencia </button>Representa una advertencia. Por ejemplo, el
+                    botón de advertencia puede indicar que algunos campos de formulario requeridos fueron omitidos</li>
+                <li><button class="btn btn-info">Información </button>Una alerta informativa. Por ejemplo, en un
+                    formulario de registro de cuenta, un botón de información podría indicar que un usuario puede hacer
+                    clic para editar su perfil.</li>
+                <li><button class="btn btn-light">Luz </button>Una gran opción para páginas web con colores de fondo
+                    oscuros</li>
+            </ul>
+            </li>
+            <li><button class="btn btn-dark">Dark </button> Works well for web pages with light background colors.
+            </li>
+            </ul>
+        </div>
+
+        <button class="btn btn-info text-black p-2 m-2" data-bs-toggle="collapse" data-bs-target="#ans9">
+            9. Bootstrap carousel
+        </button>
+        <div id="ans9" class="collapse p-2">
+            El Carousel es una presentación de diapositivas que permite desplazarse a través de una serie de
+            contenidos, ya sea imágenes, texto o marcado personalizado. También incluye controles para pasar a la
+            diapositiva anterior o siguiente, indicadores y subtítulos. Por ejemplo, una galería de imágenes
+            deslizantes.
+        </div>
+
+        <button class="btn btn-info text-black p-2 m-2" data-bs-toggle="collapse" data-bs-target="#ans10">
+            10. Bootstrap spinner
+        </button>
+        <div id="ans10" class="collapse p-2">
+            Un icono animado que muestra el estado de carga en tus proyectos. Puede ser usado para indicar que una
+            página o un elemento está cargando.
+            <div class="spinner-border text-danger" role="status"></div>
+        </div>
+
+        <button class="btn btn-info text-black p-2 m-2" data-bs-toggle="collapse" data-bs-target="#ans11">
+            11. Bootstrap navbar</button>
+        <div id="ans11" class="collapse p-2">
+            Un encabezado de navegación que se coloca en la parte superior de la página. Tiene diferentes estilos y
+            también puede incluir elementos como formularios (por ejemplo, un campo de búsqueda).
+        </div>
+
+        <button class="btn btn-info text-black p-2 m-2" data-bs-toggle="collapse" data-bs-target="#ans12">
+            12. Bootstrap modal
+        </button>
+        <div id="ans12" class="collapse p-2">
+            El plugin Modal se utiliza para mostrar notificaciones en una ventana de diálogo o pop-up.
+            <!--modal example-->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#theModal">
+                ¿Quieres aprender programación?
+            </button>
+            <div class="modal" id="theModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            Check out bootcamps at <a href="https://www.thebridge.tech/">The Bridge</a>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-info text-black p-2 m-2" data-bs-toggle="collapse" data-bs-target="#ans13">
+            13. Bootstrap inputs para subir archivos
+        </button>
+        <div id="ans13" class="collapse p-2">
+            El elemento de entrada de archivo se puede utilizar para solicitar al usuario que cargue archivos. Admite
+            archivos comunes como jpg o pdf. Se podría utilizar, por ejemplo, para solicitar al usuario que cargue una
+            foto de su ID.
+        </div>
+
+        <button class="btn btn-info text-black p-2 m-2" data-bs-toggle="collapse" data-bs-target="#ans14">
+            14. ¿Qué es el plugin de scrollspy?
+        </button>
+        <div id="ans14" class="collapse p-2">
+            Este plugin actualiza automáticamente los componentes de navegación o listas de grupo de Bootstrap en
+            función de la posición de desplazamiento para indicar qué enlace está actualmente activo en el área visible.
+            Por ejemplo, para una página que se divide en varias secciones, se puede usar para mostrar en qué sección
+            está navegando actualmente el usuario.
+        </div>
+
+        <div>Fuentes:
+            <div>
+                <div><a href="https://getbootstrap.com">https://getbootstrap.com</a></div>
+                <div><a href="https://immune.institute/blog/razones-usar-bootstrap-web/">https://immune.institute</a>
+                </div>
+                <div><a
+                        href="https://soyhorizonte.com/blog/ventajas-y-desventajas-de-usar-bootstrap/">https://soyhorizonte.com</a>
+                </div>
+                <div><a
+                        href="https://www.jose-aguilar.com/blog/como-instalar-y-usar-bootstrap/">https://www.jose-aguilar.com</a>
+                </div>
+                <div><a href="https://programarfacil.com/blog/crear-una-web-responsive-con-bootstrap/">
+                        https://programarfacil.com</a></div>
+                <div><a href="https://www.eniun.com/componentes-utiles-bootstrap/">https://www.eniun.com/</a></div>
+                <div><a href="https://blog.hubspot.com/website/bootstrap-css">https://blog.hubspot.com/</a></div>
+                <div><a
+                        href="https://www.geeksforgeeks.org/how-many-types-of-layouts-are-there-in-bootstrap/">https://www.geeksforgeeks.org/</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bg-primary text-center sticky-bottom" data-bs-theme="dark">
+        <h2>Project Bootstrap and Client-side Validation</h2>
+        <h5>by Kat & Val</h5>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
