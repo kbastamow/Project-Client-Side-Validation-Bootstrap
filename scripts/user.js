@@ -2,6 +2,9 @@
 
 document.addEventListener("load", information());
 
+
+
+
 function information() {
 let array = JSON.parse(localStorage.getItem("existing"))
 
@@ -16,8 +19,7 @@ for (let i = 0; i < array.length; i++) {
     let info = document.getElementById("info");
     
     info.appendChild(card);
-    
-    
+        
     let input1 = document.createElement("div")
     input1.textContent = "Name: " + array[i].inputName
     input1.setAttribute("class", "card bg-info text-white p-2 m-2")
