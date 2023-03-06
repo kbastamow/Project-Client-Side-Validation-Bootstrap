@@ -54,14 +54,14 @@ function onSubmit(e) {
         localStorage.setItem("existing", JSON.stringify(userArray));
 
 
-        //REDIRECT TO SECOND PAGE   - BUT HAPPENS TOO SOON - must be delayed!!!
+        //REDIRECT TO SECOND PAGE//
         setTimeout(function () {
             msg2.textContent = "";
             msg2.removeAttribute("class")
         }, 3000);
 
         setTimeout(function () {
-            window.location.href = "/pages/userview.html";
+            window.location.href = "./pages/userview.html";
         }, 3500);
 
     }
